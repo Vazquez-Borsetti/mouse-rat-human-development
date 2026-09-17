@@ -1,0 +1,3 @@
+figures/*.tiff
+__pycache__/
+*.pyc
