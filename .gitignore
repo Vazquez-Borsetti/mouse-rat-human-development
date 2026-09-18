@@ -1,3 +1,5 @@
+.vscode/
+.venv/
 figures/*.tiff
 __pycache__/
 *.pyc
