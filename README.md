@@ -138,12 +138,7 @@ See [`LICENSE`](LICENSE) for the full license text.
 ├── data/
 │   └── curated developmental dataset(s)
 │
-├── code/
-│   └── data processing and analysis scripts
-│
-├── docs/
-│   └── additional documentation
-│
+├── CODE
 ├── LICENSE
 └── README.md
 ```
