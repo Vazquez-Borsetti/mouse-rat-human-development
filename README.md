@@ -1,5 +1,7 @@
 # Mouse–Rat–Human Development Dataset
 
+[![DOI](https://zenodo.org/badge/1206348570.svg)](https://doi.org/10.5281/zenodo.23246067)
+
 A curated open dataset for translating developmental timing across **mouse, rat, and human**.
 
 ## Overview
@@ -19,22 +21,24 @@ The dataset expands a previously published **rat–human developmental dataset**
 The repository is organized as follows:
 
 ```text
-data/   → curated dataset(s)
-code/   → scripts for data processing and analysis
-docs/   → additional documentation
+data/           → curated dataset (CSV) and its data dictionary, with its own README/LICENSE for Zenodo
+src/            → shared configuration, model definitions, and plotting utilities
+*.ipynb         → analysis notebooks that generate each manuscript figure panel
+figures/        → generated figures (not version-controlled; recreated by running the notebooks)
+requirements.txt → Python dependencies
 ```
 
 ### Dataset Statistics
 
-* **784 records** covering **371 unique developmental milestones**
+* **783 records** covering **371 unique developmental milestones**
 * Milestones span both **Body** and **Brain** clusters
 * Includes **prenatal and postnatal** developmental periods
-* Species overlap:
+* Species overlap (among the 371 unique milestones):
 
-  * **178** milestones shared between Human–Mouse
-  * **167** shared between Human–Rat
-  * **9** shared between Rat–Mouse
-  * **17** common to all three species
+  * **179** shared exclusively between Human–Mouse
+  * **167** shared exclusively between Human–Rat
+  * **9** shared exclusively between Rat–Mouse
+  * **16** common to all three species
 
 ---
 
@@ -111,23 +115,40 @@ This dataset can be used for:
 
 ## Citation and Related Work
 
-If you use this dataset, please cite the accompanying publication:
+If you use this dataset or code, please cite the accompanying publication:
 
-> **[Placeholder for companion paper citation]**
+> Amici E, Grimson R, Vazquez-Borsetti P. Open Dataset of Developmental Timelines for
+> Corresponding Milestones in Mice, Rats, and Humans. (manuscript in preparation, 2026).
+
+Please also cite the specific resource you used, archived on Zenodo with its own DOI:
+
+* Dataset: [10.5281/zenodo.23244347](https://doi.org/10.5281/zenodo.23244347)
+* Code (this repository): [10.5281/zenodo.23246067](https://doi.org/10.5281/zenodo.23246067)
 
 ### Related Work
 
-The rat data included in this repository build upon a previously published rat–human developmental resource:
+The rat data included in this repository build upon a previously published rat–human
+developmental resource:
 
-> **[[rat-and-human-comparative-development](https://github.com/Vazquez-Borsetti/rat-and-human-comparative-development)]**
+> Campos Eusebi W, Iorii T, et al. Divergent Pattern of Development in Rats and Humans.
+> Neurotoxicity Research. 2024. https://doi.org/10.1007/s12640-023-00683-y
+> Companion dataset: [rat-and-human-comparative-development](https://github.com/Vazquez-Borsetti/rat-and-human-comparative-development)
+
+The modeling framework (quarter-power model with an additive constant) used to translate
+developmental time across species, applied to this dataset, is described in a companion
+modeling paper (manuscript in preparation), with code and results available at:
+[quarter-power-C-human-rodent-translation](https://github.com/Vazquez-Borsetti/quarter-power-C-human-rodent-translation)
 
 ---
 
 ## License
 
-This project is currently released under the **MIT License**.
+This project is released under the **Creative Commons Attribution-NonCommercial-ShareAlike
+4.0 International License (CC BY-NC-SA 4.0)**.
 
-See [`LICENSE`](LICENSE) for the full license text.
+See [`LICENSE`](LICENSE) for the full license text. Note that the `data/` folder is archived
+independently on Zenodo and carries its own copy of the same license (see
+[`data/LICENSE`](data/LICENSE)).
 
 ---
 
@@ -136,9 +157,16 @@ See [`LICENSE`](LICENSE) for the full license text.
 ```text
 .
 ├── data/
-│   └── curated developmental dataset(s)
-│
-├── CODE
+│   ├── dataset_mrh_0.9.csv   (curated dataset)
+│   ├── DATA_DICTIONARY.md
+│   ├── README.md             (Zenodo-ready dataset documentation)
+│   └── LICENSE
+├── src/                      (shared config, models, plotting utilities)
+├── panel1and2.ipynb
+├── panel3_0.2.ipynb
+├── panel4D_0.4.ipynb
+├── panel5D0.1.ipynb
+├── requirements.txt
 ├── LICENSE
 └── README.md
 ```
@@ -146,7 +174,6 @@ See [`LICENSE`](LICENSE) for the full license text.
 ---
 
 
-[![DOI](https://zenodo.org/badge/1206348570.svg)](https://doi.org/10.5281/zenodo.23246066)
 ## Acknowledgments
 
 This work builds upon developmental data generated and published by numerous researchers and research groups.
