@@ -121,8 +121,11 @@ If you use this dataset, please cite the companion publication:
 > Amici E, Grimson R, Vazquez-Borsetti P. Open Dataset of Developmental Timelines for
 > Corresponding Milestones in Mice, Rats, and Humans. (manuscript in preparation, 2026).
 
-Please also cite this Zenodo archive directly using the DOI assigned by Zenodo upon
-publication (see the "Cite as" box on the Zenodo record page).
+Please also cite this Zenodo archive directly:
+
+> Amici E, Grimson R, Vazquez-Borsetti P. Open Dataset of Developmental Timelines for
+> Corresponding Milestones in Mice, Rats, and Humans [Data set]. Zenodo, 2026.
+> https://doi.org/10.5281/zenodo.23244347
 
 ### Related Work
 
