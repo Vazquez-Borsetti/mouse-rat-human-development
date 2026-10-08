@@ -146,7 +146,7 @@ See [`LICENSE`](LICENSE) for the full license text.
 ---
 
 
-
+[![DOI](https://zenodo.org/badge/1206348570.svg)](https://doi.org/10.5281/zenodo.23246066)
 ## Acknowledgments
 
 This work builds upon developmental data generated and published by numerous researchers and research groups.
